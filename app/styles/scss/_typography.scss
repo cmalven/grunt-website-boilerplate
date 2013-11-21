@@ -1,0 +1,64 @@
+/* ==============================================================
+   Typography
+   ============================================================== */
+
+
+//---------------------------------------------------------------
+// Helpers
+//---------------------------------------------------------------
+
+@mixin aa-type {
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin aa-type-normal {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+//---------------------------------------------------------------
+// Fonts
+//---------------------------------------------------------------
+
+
+@mixin font-defaults {
+  font-style: normal;
+  font-weight: normal;
+}
+
+$helvetica-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin helvetica {
+  @include font-defaults;
+  font-family: $helvetica-family;
+}
+
+
+//---------------------------------------------------------------
+// Base Typography
+//---------------------------------------------------------------
+
+// Adjust the base font-size so that 1.4rem equals 14px
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include typeset(16, 1.5);
+}
+
+
+//---------------------------------------------------------------
+// Type Styles
+//---------------------------------------------------------------
+
+
+// 1a. Navigation
+// 1b. Cart Navigation
+
+@mixin type-a {
+  @include helvetica;
+  @include typeset(12, 1);
+  color: $dark-gray;
+}

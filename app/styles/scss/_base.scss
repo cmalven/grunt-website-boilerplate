@@ -1,0 +1,13 @@
+/* ==============================================================
+   Base Styling
+   ============================================================== */
+
+@include border-box-sizing;
+
+body {
+  padding: 0 $outer-margin-full;
+
+  @include at-breakpoint($mobile) {
+    padding: 0 $outer-margin-mobile;
+  }
+}

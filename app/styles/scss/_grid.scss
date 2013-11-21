@@ -1,0 +1,24 @@
+/* ==============================================================
+   Grid
+   ============================================================== */
+
+// Default values for Susy Grids
+
+$legacy-support-for-ie6 : false;
+$legacy-support-for-ie7 : true;
+
+$total-columns          : 12;
+$column-width           : 4em;
+$gutter-width           : 2.5em;
+$grid-padding           : 0;
+
+// Breakpoints
+
+$maxsize                : 74em;
+$tablet                 : 6 50em;
+$mobile                 : 2 31em;
+
+// Margins on body
+
+$outer-margin-full: 4em;
+$outer-margin-mobile: 1em;
